@@ -1,0 +1,22 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>{{ person }}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding text-center>
+    <ion-card>
+        <ion-card-content>
+            {{ text }}
+        </ion-card-content>
+        <ion-row>
+            <ion-col>
+                <button (click)="onClose(true)" ion-button small outline color="danger"></button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <button (click)="onClose(false)" ion-button color="danger">Close</button>
+</ion-content>
